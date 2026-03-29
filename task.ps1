@@ -13,7 +13,7 @@ $vmImage = "Ubuntu2204"
 $vmSize = "Standard_B2ts_v2"
 $dnsLabel = "matetask" + (Get-Random -Count 1) 
 $extensionName = "installapp"
-$scriptUri = "https://raw.githubusercontent.com/spridoloba/azure_task_12_deploy_app_with_vm_extention/develop/install-app.sh"
+$scriptUri = "https://raw.githubusercontent.com/spridoloba/azure_task_12_deploy_app_with_vm_extention/main/install-app.sh"
 
 Write-Host "Creating a resource group $resourceGroupName ..."
 New-AzResourceGroup -Name $resourceGroupName -Location $location
